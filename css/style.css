@@ -9,6 +9,7 @@
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 .btn {
@@ -19,6 +20,7 @@ html {
   cursor: pointer;
   font-weight: bold;
 }
+
 
 @media (min-width: 768px) {
   .container {
@@ -212,6 +214,19 @@ html {
 }
 
 @media(max-width: 768px) {
+  .toggle-menu-display {
+      display: flex !important;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.9);
+      z-index: 2;
+    }
+  
+    .toggle-menu-hidden {
+      display: none !important;
+    }
   #sec-1 {
     height: 300px;
     width: 100%;
@@ -290,7 +305,9 @@ html {
     width: 20px;
     list-style: none;
   }
-
+ #sec-1 ul.toggle-menu:hover {
+  cursor: pointer;
+ }
   #sec-1 ul.toggle-menu li:nth-child(2) {
     width: 50%;
     transition: 0.3s;
@@ -300,7 +317,7 @@ html {
     width: 100%;
   }
 
-  #sec-1 ul.toggle-menu:hover+div {
+  /* #sec-1 ul.toggle-menu:hover+div {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -308,7 +325,8 @@ html {
     left: 0;
     background-color: rgba(0, 0, 0, 0.9);
     z-index: 2;
-  }
+  } */
+
 
   #sec-1 ul.toggle-menu+div {
     padding: 30px 10px 0;

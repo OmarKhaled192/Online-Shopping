@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Online Shopping</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/all.css">
   </head>
@@ -13,9 +13,9 @@
   <body>
     <!-- start header section -->
     <section id="sec-1">
-      <nav>
+      <nav id="home">
         <section class="container">
-          <div><img src="images/logo.png" alt="">
+          <div><img src="images/logo.png" alt="LOGO">
             <p> <span>O</span>nline <span>S</span>hopping</p>
           </div>
           <ul class="toggle-menu">
@@ -24,10 +24,10 @@
             <li></li>
           </ul>
           <div>
-            <a href="#">Home</a>
-            <a href="#">Our Products</a>
-            <a href="#">About Us</a>
-            <a href="#">Contact Us</a>
+            <a href="#home">Home</a>
+            <a href="#our-products">Our Products</a>
+            <a href="#about-us">About Us</a>
+            <a href="#contact-us">Contact Us</a>
             <div class="socials-icons">
               <a href="#" class="socials"><i class="fa-brands fa-twitter"></i></a>
               <a href="#" class="socials"><i class="fa-brands fa-facebook-f"></i></a>
@@ -58,7 +58,7 @@
     <!-- start visit section -->
     <section id="sec-3">
       <h2>Visit our Online Strores</h2>
-      <div class="container">
+      <div class="container" id="our-products">
         <p>Deals of the Month</p>
         <section class="cards">
           <figure>
@@ -100,7 +100,7 @@
     <!-- end visit section -->
     <!-- start arrival section -->
     <section id="sec-4">
-      <div class="container">
+      <div class="container" id="about-us">
         <h2>New Arrivals</h2>
         <div class="img-cards">
           <img src="images/1.jpg" alt="">
@@ -180,7 +180,7 @@
     <!-- end contact section -->
     <!-- start footer section -->
     <footer>
-      <div class="container">
+      <div class="container" id="contact-us">
         <div class="links">
           <a href="#">Return policy</a>
           <a href="#">Search our store</a>
@@ -210,6 +210,8 @@
       </div>
     </footer>
     <!-- end footer section -->
+    <!-- main.js  -->
+    <script src="js/main.js"></script>
   </body>
 
 </html>
